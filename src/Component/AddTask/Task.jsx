@@ -7,10 +7,14 @@ function Task ({newList}){
     function handleInput (e){
         setInput(e.target.value)
     }
+    const addTask = () =>{
+        newList(input);
+        setInput("")
+    }
 return (
     <>
     <input type="text"  value={input} onChange={handleInput}/>
-    <button onClick={()=> newList(input)}>Add Task </button>
+    <button onClick={addTask}>Add Task </button>
     
     </>
 )
