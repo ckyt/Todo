@@ -13,7 +13,7 @@ function Task ({newList}){
     }
 return (
     <>
-    <input type="text"  value={input} onChange={handleInput}/>
+    <input type="text" placeholder="Add Task......" value={input} onChange={handleInput}/>
     <button onClick={addTask}>Add Task </button>
     
     </>
